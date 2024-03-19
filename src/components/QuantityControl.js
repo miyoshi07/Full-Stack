@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Container, Row, Col, InputGroup, Form } from "react-bootstrap";
+import { Button, InputGroup, Form } from "react-bootstrap";
 
 const QuantityControl = ({ setQuantity, quantity }) => {
   const [newQuantity, setNewQuantity] = useState(quantity);

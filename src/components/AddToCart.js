@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button, Container, Form, Row, Col, InputGroup } from "react-bootstrap";
+import { Button, Container, Row, Col } from "react-bootstrap";
 import Swal from "sweetalert2";
 import UserContext from "../context/UserContext";
 import { addProductToCart } from "../services/cartService";

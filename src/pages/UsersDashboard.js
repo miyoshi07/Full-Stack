@@ -59,7 +59,7 @@ const UsersDashboard = () => {
       );
     });
     setUsers(userList);
-  }, [usersData]);
+  }, [usersData] );
 
   return (
     <>

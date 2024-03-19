@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Navigate } from "react-router-dom";
 import { getActiveProducts } from "../services/productService";
 import ProductCard from "./ProductCard";
 import { Container, Row } from "react-bootstrap";

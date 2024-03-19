@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Button, Card, Col, Container, Row, Table } from "react-bootstrap";
+import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import UserContext from "../context/UserContext";
 import { checkoutOrder } from "../services/orderService";
@@ -11,7 +11,6 @@ import {
 } from "../services/cartService";
 import Swal from "sweetalert2";
 import QuantityControl from "../components/QuantityControl";
-import GadgetImage from "../assets/gadget.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
@@ -108,10 +107,10 @@ const Cart = () => {
     if (userCart) {
       const cartItems = userCart.cartItems.map((item) => {
         return (
-          <Card className="h-100 position-relative border-0 shadow-none">
+          <Card className="h-100 position-relative border-0 shadow-none" key={item._id}>
             <Row>
               <Col md={4}>
-                <Card.Img variant="top" src={GadgetImage} />
+               
               </Col>
               <Col md={8}>
                 <Card.Body className="d-flex flex-column">

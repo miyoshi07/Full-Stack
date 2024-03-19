@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useEffect, useState } from "react";
-import { Button, Container, Table } from "react-bootstrap";
+import {  Container, Table } from "react-bootstrap";
 import { Navigate } from "react-router-dom";
 import { getAllProducts } from "../services/productService";
 import AddProduct from "./AddProduct";

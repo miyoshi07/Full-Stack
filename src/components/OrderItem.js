@@ -1,16 +1,15 @@
 import React from "react";
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import GadgetImage from "../assets/gadget.jpg";
-import AddReview from "./AddReview";
+import {  Card, Col, Container, Row } from "react-bootstrap";
+
 
 const OrderItem = ({ orderItem }) => {
-  const { productName, productPrice, quantity, subTotal } = orderItem;
+  const { productName, productPrice, subTotal } = orderItem;
   return (
     <Container style={{ width: "80%" }} className="mt-5">
       <Card className="h-100 position-relative border-0 shadow-none">
         <Row>
           <Col md={4}>
-            <Card.Img variant="top" src={GadgetImage} />
+            
           </Col>
           <Col md={8}>
             <Card.Body className="d-flex flex-column">
@@ -35,11 +34,7 @@ const OrderItem = ({ orderItem }) => {
                 </Col>
               </Row>
 
-              <Card.Subtitle className="ms-2">Qty: {quantity}</Card.Subtitle>
-              <AddReview
-                productId={orderItem.productId}
-                productName={productName}
-              />
+              
             </Card.Body>
           </Col>
         </Row>
